@@ -111,7 +111,7 @@ struct Box2DManifold {
 	Box2DManifoldPoint points[b2_maxManifoldPoints];
 	Box2DVector2 localNormal;
 	Box2DVector2 localPoint;
-    Box2DManifoldType type;
+	Box2DManifoldType type;
 	int32 pointCount;
 };
 
@@ -137,7 +137,7 @@ struct Box2DBodyDefinition {
 	float32 angularVelocity;
 	float32 linearDamping;
 	float32 angularDamping;
-    bool allowSleep;
+	bool allowSleep;
 	bool awake;
 	bool fixedRotation;
 	bool bullet;
@@ -165,7 +165,7 @@ struct Box2DJointDefinition {
 };
 
 struct Box2DDistanceJointDefinition {
-    Box2DJointDefinition joint;
+	Box2DJointDefinition joint;
 	Box2DVector2 localAnchorA;
 	Box2DVector2 localAnchorB;
 	float32 length;
@@ -174,7 +174,7 @@ struct Box2DDistanceJointDefinition {
 };
 
 struct Box2DFrictionJointDefinition {
-    Box2DJointDefinition joint;
+	Box2DJointDefinition joint;
 	Box2DVector2 localAnchorA;
 	Box2DVector2 localAnchorB;
 	float32 maxForce;
@@ -182,14 +182,14 @@ struct Box2DFrictionJointDefinition {
 };
 
 struct Box2DGearJointDefinition {
-    Box2DJointDefinition joint;
+	Box2DJointDefinition joint;
 	Box2DJoint joint1;
 	Box2DJoint joint2;
 	float32 ratio;
 };
 
 struct Box2DMotorJointDefinition {
-    Box2DJointDefinition joint;
+	Box2DJointDefinition joint;
 	Box2DVector2 linearOffset;
 	float32 angularOffset;
 	float32 maxForce;
@@ -198,7 +198,7 @@ struct Box2DMotorJointDefinition {
 };
 
 struct Box2DMouseJointDefinition {
-    Box2DJointDefinition joint;
+	Box2DJointDefinition joint;
 	Box2DVector2 target;
 	float32 maxForce;
 	float32 frequencyHz;
@@ -206,7 +206,7 @@ struct Box2DMouseJointDefinition {
 };
 
 struct Box2DPulleyJointDefinition {
-    Box2DJointDefinition joint;
+	Box2DJointDefinition joint;
 	Box2DVector2 groundAnchorA;
 	Box2DVector2 groundAnchorB;
 	Box2DVector2 localAnchorA;
@@ -217,7 +217,7 @@ struct Box2DPulleyJointDefinition {
 };
 
 struct Box2DPrismaticJointDefinition {
-    Box2DJointDefinition joint;
+	Box2DJointDefinition joint;
 	Box2DVector2 localAnchorA;
 	Box2DVector2 localAnchorB;
 	Box2DVector2 localAxisA;
@@ -231,7 +231,7 @@ struct Box2DPrismaticJointDefinition {
 };
 
 struct Box2DRevoluteJointDefinition {
-    Box2DJointDefinition joint;
+	Box2DJointDefinition joint;
 	Box2DVector2 localAnchorA;
 	Box2DVector2 localAnchorB;
 	float32 referenceAngle;
@@ -244,23 +244,23 @@ struct Box2DRevoluteJointDefinition {
 };
 
 struct Box2DRopeJointDefinition {
-    Box2DJointDefinition joint;
+	Box2DJointDefinition joint;
 	Box2DVector2 localAnchorA;
 	Box2DVector2 localAnchorB;
 	float32 maxLength;
 };
 
 struct Box2DWeldJointDefinition {
-    Box2DJointDefinition joint;
-    Box2DVector2 localAnchorA;
-    Box2DVector2 localAnchorB;
-    float32 referenceAngle;
-    float32 frequencyHz;
-    float32 dampingRatio;
+	Box2DJointDefinition joint;
+	Box2DVector2 localAnchorA;
+	Box2DVector2 localAnchorB;
+	float32 referenceAngle;
+	float32 frequencyHz;
+	float32 dampingRatio;
 };
 
 struct Box2DWheelJointDefinition {
-    Box2DJointDefinition joint;
+	Box2DJointDefinition joint;
 	Box2DVector2 localAnchorA;
 	Box2DVector2 localAnchorB;
 	Box2DVector2 localAxisA;
